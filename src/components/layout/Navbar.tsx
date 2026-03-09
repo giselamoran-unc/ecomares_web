@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage, Language } from "@/i18n/LanguageContext";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/ecomares-logo.png";
 
 const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -28,8 +29,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-ocean-deep/95 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-display text-xl font-bold tracking-wider text-primary-foreground">
-            ECOMARES
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="ECOMARES" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop nav */}
