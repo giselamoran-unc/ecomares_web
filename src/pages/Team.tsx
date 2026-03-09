@@ -1,15 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
 import SectionHeader from "@/components/SectionHeader";
-import { ExternalLink } from "lucide-react";
-
-const teamMembers = [
-  { name: "Dra. María García", role: "pi", desc: "Investigadora Principal. Especialista en ecología bentónica y ecosistemas polares.", affiliation: "CONICET - CADIC" },
-  { name: "Dr. Juan Pérez", role: "researcher", desc: "Investigador Adjunto. Ecología trófica y carbono azul.", affiliation: "CONICET - CADIC" },
-  { name: "Dra. Laura Martínez", role: "postdoc", desc: "Postdoctorado en biodiversidad marina y modelado ecológico.", affiliation: "CONICET - CADIC" },
-  { name: "Lic. Carlos López", role: "phd", desc: "Becario doctoral. Microplásticos en ecosistemas subantárticos.", affiliation: "UNTDF" },
-  { name: "Ana Rodríguez", role: "student", desc: "Estudiante de grado. Ecología de invertebrados marinos.", affiliation: "UNTDF" },
-];
+import { teamMembers } from "@/data/team";
 
 const Team = () => {
   const { t } = useLanguage();

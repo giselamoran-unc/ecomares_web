@@ -1,15 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
 import SectionHeader from "@/components/SectionHeader";
-import antarcticaImg from "@/assets/expedition-antarctica.jpg";
-import arcticImg from "@/assets/expedition-arctic.jpg";
-import beagleImg from "@/assets/expedition-beagle.jpg";
-
-const expeditions = [
-  { img: antarcticaImg, title: "Campaña Antártica de Verano", year: "2023", location: "Península Antártica", desc: "Muestreo de comunidades bentónicas en la costa occidental de la Península Antártica. Estudios de biodiversidad, ecología trófica y carbono azul en fondos marinos polares." },
-  { img: arcticImg, title: "Expedición Ártica", year: "2022", location: "Svalbard, Noruega", desc: "Estudio comparativo de ecosistemas bentónicos árticos y antárticos. Muestreo de sedimentos y fauna bentónica en fiordos del archipiélago de Svalbard." },
-  { img: beagleImg, title: "Muestreo Canal Beagle", year: "2024", location: "Canal Beagle, Tierra del Fuego", desc: "Campaña de muestreo estival en el Canal Beagle para el estudio de comunidades bentónicas, bosques de macroalgas y redes tróficas costeras." },
-];
+import { expeditions } from "@/data/expeditions";
 
 const Expeditions = () => {
   const { t } = useLanguage();
@@ -17,7 +9,7 @@ const Expeditions = () => {
     <PageLayout>
       {/* Hero */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-        <img src={antarcticaImg} alt="Expedición" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={expeditions[0]?.img} alt="Expedición" className="absolute inset-0 w-full h-full object-cover" />
         <div className="hero-overlay absolute inset-0" />
         <div className="relative z-10 text-center px-4">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-primary-foreground tracking-wider">{t.expeditions.title}</h1>
