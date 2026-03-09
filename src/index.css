@@ -7,24 +7,24 @@
 @layer base {
   :root {
     --background: 210 20% 98%;
-    --foreground: 210 50% 10%;
+    --foreground: 212 30% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 50% 10%;
+    --card-foreground: 212 30% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 50% 10%;
+    --popover-foreground: 212 30% 20%;
 
-    --primary: 205 65% 20%;
+    --primary: 207 60% 31%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 195 30% 94%;
-    --secondary-foreground: 205 65% 20%;
+    --secondary: 200 25% 94%;
+    --secondary-foreground: 207 60% 31%;
 
     --muted: 210 20% 95%;
-    --muted-foreground: 210 15% 45%;
+    --muted-foreground: 212 15% 45%;
 
-    --accent: 185 60% 40%;
+    --accent: 186 55% 42%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,16 +32,16 @@
 
     --border: 210 20% 90%;
     --input: 210 20% 90%;
-    --ring: 205 65% 20%;
+    --ring: 207 60% 31%;
 
     --radius: 0.5rem;
 
-    --ocean-deep: 210 60% 12%;
-    --ocean-mid: 205 55% 25%;
-    --ocean-light: 195 50% 50%;
-    --ocean-surface: 185 60% 65%;
-    --ocean-foam: 185 30% 92%;
-    --turquoise: 175 65% 45%;
+    --ocean-deep: 212 55% 15%;
+    --ocean-mid: 207 55% 30%;
+    --ocean-light: 200 50% 48%;
+    --ocean-surface: 186 55% 58%;
+    --ocean-foam: 190 25% 93%;
+    --turquoise: 180 55% 42%;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
@@ -74,30 +74,30 @@
   .hero-overlay {
     background: linear-gradient(
       to bottom,
-      hsla(210, 60%, 12%, 0.3) 0%,
-      hsla(210, 60%, 12%, 0.6) 50%,
-      hsla(210, 60%, 12%, 0.85) 100%
+      hsla(212, 55%, 15%, 0.3) 0%,
+      hsla(212, 55%, 15%, 0.6) 50%,
+      hsla(212, 55%, 15%, 0.85) 100%
     );
   }
 
   .section-ocean {
     background: linear-gradient(
       135deg,
-      hsl(210, 60%, 12%) 0%,
-      hsl(205, 55%, 25%) 100%
+      hsl(212, 55%, 15%) 0%,
+      hsl(207, 55%, 30%) 100%
     );
   }
 
   .section-ocean-light {
     background: linear-gradient(
       135deg,
-      hsl(205, 55%, 25%) 0%,
-      hsl(195, 50%, 35%) 100%
+      hsl(207, 55%, 30%) 0%,
+      hsl(200, 50%, 38%) 100%
     );
   }
 
   .text-gradient-ocean {
-    background: linear-gradient(135deg, hsl(205, 55%, 25%), hsl(175, 65%, 45%));
+    background: linear-gradient(135deg, hsl(207, 55%, 30%), hsl(180, 55%, 42%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
