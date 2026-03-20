@@ -1,5 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
-import logo from "@/assets/ecomares-logo.png";
+import logo from "@/assets/logo_solo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -8,10 +8,10 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="ECOMARES" className="h-12 w-auto" />
+            <img src={logo} alt="ECOMARES" className="h-14 w-auto" />
             <div>
               <p className="font-display text-xl font-bold tracking-wider">ECOMARES</p>
-              <p className="text-sm text-primary-foreground/60">{t.footer.group}</p>
+              <p className="text-sm text-primary-foreground/60">Ecosistemas Marinos y Polares</p>
             </div>
           </div>
           <p className="text-sm text-primary-foreground/50">

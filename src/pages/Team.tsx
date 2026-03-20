@@ -31,11 +31,13 @@ const Team = () => {
                 </div>
                 <div className="p-5">
                   <span className="text-xs uppercase tracking-wider text-turquoise font-medium">
-                    {t.team.roles[m.role as keyof typeof t.team.roles]}
+                    {m.roleLabel || t.team.roles[m.role as keyof typeof t.team.roles]}
                   </span>
                   <h3 className="font-display text-lg font-semibold text-foreground mt-1">{m.name}</h3>
-                  <p className="text-sm text-muted-foreground mt-2">{m.desc}</p>
                   <p className="text-xs text-muted-foreground/70 mt-2">{m.affiliation}</p>
+                  {m.researchLines && (
+                    <p className="text-sm text-muted-foreground mt-2">{m.researchLines.join(" · ")}</p>
+                  )}
                 </div>
               </Link>
             ))}

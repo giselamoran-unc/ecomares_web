@@ -30,7 +30,7 @@ const TeamMember = () => {
               </div>
             )}
             <div>
-              <span className="text-xs uppercase tracking-wider text-turquoise font-medium">{member.role}</span>
+              <span className="text-xs uppercase tracking-wider text-turquoise font-medium">{member.roleLabel || member.role}</span>
               <h1 className="font-display text-3xl font-bold text-primary-foreground mt-1">{member.name}</h1>
               <p className="text-primary-foreground/70 mt-1">{member.affiliation}</p>
             </div>
