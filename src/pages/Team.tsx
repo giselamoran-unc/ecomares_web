@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
 import SectionHeader from "@/components/SectionHeader";
@@ -16,9 +17,17 @@ const Team = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((m, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <Link
+                key={i}
+                to={`/team/${m.id}`}
+                className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow block"
+              >
                 <div className="aspect-square bg-secondary flex items-center justify-center">
-                  <span className="text-5xl font-display font-bold text-muted-foreground/30">{m.name.charAt(0)}</span>
+                  {m.photo ? (
+                    <img src={m.photo} alt={m.name} className="w-full h-full object-cover" />
+                  ) : (
+                    <span className="text-5xl font-display font-bold text-muted-foreground/30">{m.name.charAt(0)}</span>
+                  )}
                 </div>
                 <div className="p-5">
                   <span className="text-xs uppercase tracking-wider text-turquoise font-medium">
@@ -28,7 +37,7 @@ const Team = () => {
                   <p className="text-sm text-muted-foreground mt-2">{m.desc}</p>
                   <p className="text-xs text-muted-foreground/70 mt-2">{m.affiliation}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

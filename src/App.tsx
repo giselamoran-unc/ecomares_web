@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/i18n/LanguageContext";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Team from "./pages/Team";
+import TeamMember from "./pages/TeamMember";
 import Research from "./pages/Research";
 import Projects from "./pages/Projects";
 import Expeditions from "./pages/Expeditions";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/team/:id" element={<TeamMember />} />
             <Route path="/research" element={<Research />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/expeditions" element={<Expeditions />} />
