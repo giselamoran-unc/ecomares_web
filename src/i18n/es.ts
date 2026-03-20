@@ -14,7 +14,7 @@ export const es = {
   },
   hero: {
     title: "ECOMARES",
-    subtitle: "Ecología y Conservación de Ecosistemas Marinos",
+    subtitle: "Ecosistemas Marinos y Polares",
     description: "Investigamos los ecosistemas marinos desde las regiones polares hasta las latitudes templadas, para comprender su funcionamiento y contribuir a su conservación.",
     cta: "Conocer más",
   },
