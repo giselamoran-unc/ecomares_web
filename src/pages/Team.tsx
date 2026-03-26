@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
-import SectionHeader from "@/components/SectionHeader";
 import { teamMembers } from "@/data/team";
+import teamBg from "@/assets/estrella.jpg";
 
 const Team = () => {
   const { t } = useLanguage();
   return (
     <PageLayout>
-      <section className="section-ocean py-20 md:py-28 mt-0">
-        <div className="container mx-auto px-4 pt-8">
-          <SectionHeader title={t.team.title} subtitle={t.team.subtitle} light />
+      <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
+        <img src={teamBg} alt="Equipo" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="hero-overlay absolute inset-0" />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="font-display text-4xl md:text-6xl font-bold text-primary-foreground tracking-wider">
+            {t.team.title}
+          </h1>
         </div>
       </section>
       <section className="py-20 md:py-28">

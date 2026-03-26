@@ -19,7 +19,7 @@ export const teamMembers: TeamMember[] = [
     roleLabel: "Investigador Principal",
     desc: "Investigador Principal. Antártida, ecosistemas costeros y carbono",
     affiliation: "IDEA (CONICET - UNC)",
-    bio: "Investigador Principal de CONICET. Especialista en ecosistemas antárticos y costeros.",
+    bio: "Mi principal interés se dirige a estudiar las respuestas de ecosistemas polares y de altas latitudes frente al cambio climático. Asimismo, el foco se amplía para analizar las retroalimentaciones entre el cambio climático y la capacidad de secuestrar carbono de estos ecosistemas. Para ello se realiza un trabajo conjunto e interdisciplinario con los y las integrantes del grupo como así también con cooperaciones con otros grupos de trabajo tanto nacionales como internacionales.",
     email: "rsahadeunc@gmail.com",
     researchLines: ["Antártida", "Ecosistemas costeros", "Carbono"],
     photo: "/src/assets/rs.jpg",

@@ -1,12 +1,13 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import { es } from "./es";
+import { en } from "./en";
 
 export type Language = "es" | "en";
 export type Translations = typeof es;
 
 const translations: Record<Language, Translations> = {
   es,
-  en: es, // Placeholder — English translations will be added later
+  en, // Placeholder — English translations will be added later
 };
 
 interface LanguageContextType {

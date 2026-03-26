@@ -1,7 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
-import SectionHeader from "@/components/SectionHeader";
-import researchDiving from "@/assets/research-diving.jpg";
+import researchDiving from "@/assets/5.jpg";
 
 const About = () => {
   const { t } = useLanguage();
@@ -15,14 +14,14 @@ const About = () => {
         </h1>
       </section>
       <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 max-w-4xl space-y-16">
-          <div>
-            <h2 className="font-display text-3xl font-bold text-foreground mb-6">{t.about.mission}</h2>
-            <p className="text-lg leading-relaxed text-muted-foreground">{t.about.missionText}</p>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
           <div>
             <h2 className="font-display text-3xl font-bold text-foreground mb-6">{t.about.focus}</h2>
-            <p className="text-lg leading-relaxed text-muted-foreground">{t.about.focusText}</p>
+            <div className="space-y-4">
+              {t.about.focusText.split("\n\n").map((paragraph, i) => (
+                 <p key={i} className="text-lg leading-relaxed text-muted-foreground text-justify">{paragraph}</p>
+               ))}
+          </div>   
           </div>
         </div>
       </section>

@@ -1,15 +1,19 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
-import SectionHeader from "@/components/SectionHeader";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Instagram } from "lucide-react";
+import contactBg from "@/assets/estrella-roja.jpg";
 
 const Contact = () => {
   const { t } = useLanguage();
   return (
     <PageLayout>
-      <section className="section-ocean py-20 md:py-28">
-        <div className="container mx-auto px-4 pt-8">
-          <SectionHeader title={t.contact.title} light />
+      <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
+        <img src={contactBg} alt="Contacto" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="hero-overlay absolute inset-0" />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="font-display text-4xl md:text-6xl font-bold text-primary-foreground tracking-wider">
+            {t.contact.title}
+          </h1>
         </div>
       </section>
       <section className="py-20 md:py-28">
@@ -19,22 +23,26 @@ const Contact = () => {
               <MapPin className="w-6 h-6 text-turquoise mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground">{t.contact.institution}</h3>
-                <p className="text-muted-foreground mt-1">Centro Austral de Investigaciones Científicas (CADIC-CONICET)</p>
-                <p className="text-muted-foreground">Bernardo Houssay 200, V9410 Ushuaia, Tierra del Fuego, Argentina</p>
+                <p className="text-muted-foreground mt-1">Instituto de Diversidad y Ecología Animal (IDEA, CONICET/UNC)</p>
+                <p className="text-muted-foreground">Av. Vélez Sarsfield 299, Córdoba, Argentina</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Mail className="w-6 h-6 text-turquoise mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground">{t.contact.email}</h3>
-                <p className="text-muted-foreground mt-1">ecomares@cadic-conicet.gob.ar</p>
+                <a href="mailto:ecomares.idea.unc@gmail.com" className="text-muted-foreground mt-1 hover:text-turquoise transition-colors">
+                  ecomares.idea.unc@gmail.com
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <Phone className="w-6 h-6 text-turquoise mt-1 flex-shrink-0" />
+              <Instagram className="w-6 h-6 text-turquoise mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-display text-lg font-semibold text-foreground">{t.contact.phone}</h3>
-                <p className="text-muted-foreground mt-1">+54 2901 422310</p>
+                <h3 className="font-display text-lg font-semibold text-foreground">Redes sociales</h3>
+                <a href="https://instagram.com/ecomares" target="_blank" rel="noopener noreferrer" className="text-muted-foreground mt-1 hover:text-turquoise transition-colors">
+                  @ecomares
+                </a>
               </div>
             </div>
           </div>

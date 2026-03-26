@@ -1,13 +1,13 @@
 export const es = {
   nav: {
     home: "Inicio",
-    about: "Quiénes Somos",
+    about: "Acerca de",
     team: "Equipo",
     research: "Investigación",
     projects: "Proyectos",
     expeditions: "Expediciones",
     publications: "Publicaciones",
-    outreach: "Divulgación",
+    outreach: "Contar la ciencia",
     collaborations: "Colaboraciones",
     opportunities: "Oportunidades",
     contact: "Contacto",
@@ -20,7 +20,7 @@ export const es = {
   },
   home: {
     introTitle: "Sobre ECOMARES",
-    introText: "Somos un grupo de investigación dedicado al estudio de los ecosistemas marinos bentónicos, su biodiversidad, funcionamiento ecológico y respuesta frente al cambio global. Nuestro trabajo abarca desde la ecología trófica y el carbono azul hasta el impacto de los microplásticos y el modelado ecológico.",
+    introText: "Estudiamos ecosistemas costeros polares del Ártico, la Antártida y áreas subantárticas, analizando la estructura y diversidad de ensambles bentónicos y su respuesta al Cambio Climático. Trabajamos desde una perspectiva interdisciplinaria que integra ecofisiología, genética, biogeoquímica y modelos matemáticos. Actualmente investigamos el papel de estos ecosistemas como sistemas de Carbono Azul y su potencial como soluciones basadas en la Naturaleza frente al cambio global.",
     researchTitle: "Líneas de Investigación",
     researchAreas: [
       { title: "Ecología Bentónica", desc: "Estudio de las comunidades que habitan el fondo marino y sus interacciones ecológicas." },
@@ -43,12 +43,9 @@ export const es = {
     contactButton: "Escribinos",
   },
   about: {
-    title: "Quiénes Somos",
-    mission: "Nuestra Misión",
-    missionText: "ECOMARES tiene como misión generar conocimiento científico sobre los ecosistemas marinos, contribuyendo a su conservación y manejo sustentable. Trabajamos en la interfaz entre la ecología básica y aplicada, con especial enfoque en los ecosistemas bentónicos de la plataforma continental argentina y las regiones polares.",
+    title: "Acerca de",
     focus: "Enfoque Científico",
-    focusText: "Nuestras investigaciones abarcan múltiples escalas espaciales y temporales, desde estudios de biodiversidad local hasta análisis de impacto del cambio climático a escala regional. Combinamos trabajo de campo, experimentos de laboratorio y modelado ecológico para abordar preguntas fundamentales sobre el funcionamiento de los ecosistemas marinos.",
-  },
+    focusText: "El trabajo de investigación del grupo ha estado principalmente dirigido al estudio de ecosistemas costeros polares, tanto en el Ártico como en la Antártida, incluyendo más recientemente áreas oceánicas subantárticas como el Banco Burdwood y el Canal Beagle. El principal interés es estudiar en forma comparativa estos ecosistemas de altas latitudes que con historias evolutivas muy diferentes comparten condiciones ambientales similares, siendo además los más afectados por el proceso de Cambio Climático (CC).\n\nPara ello analizamos los patrones de estructura y diversidad de ensambles bentónicos y su dinámica temporal, se estudian los procesos determinantes de estos patrones desde una perspectiva interdisciplinaria incluyendo ecofisiología, genética de poblaciones, biología reproductiva, biogeoquímica y la aplicación de modelos matemáticos. En ese contexto se observaron cambios en el ecosistema antártico, inesperados a priori, que gracias a un sólido estudio de base pudieron ser relacionados al proceso de CC.\n\nDado que en las regiones polares este proceso es mucho más pronunciado y rápido que en el resto del planeta, estas áreas son un excelente laboratorio natural para abordar el estudio de la respuesta ecosistémica a este proceso. Actualmente, no sólo se abordan los efectos del CC sino que se está haciendo especial hincapié en el papel de estos ecosistemas en la fijación, almacenamiento y eventual secuestro de Carbono, analizando su potencial como sistemas de Carbono Azul. Se ha sugerido que debido a su extensión y eficiencia en el secuestro de Carbono estos ecosistemas antárticos y subantárticos podrían representar las mayores retroalimentaciones negativas al proceso de CC, siendo una de las principales soluciones basadas en la Naturaleza.",  },
   team: {
     title: "Equipo de Investigación",
     subtitle: "Investigadores, becarios y colaboradores del grupo ECOMARES",
@@ -63,7 +60,7 @@ export const es = {
   },
   research: {
     title: "Investigación",
-    subtitle: "Nuestras principales líneas de investigación en ecología marina",
+    subtitle: "Nuestras principales líneas de investigación",
   },
   projects: {
     title: "Proyectos",
@@ -80,7 +77,7 @@ export const es = {
     subtitle: "Artículos científicos publicados por el grupo de investigación",
   },
   outreach: {
-    title: "Divulgación",
+    title: "Contar la ciencia",
     subtitle: "Actividades de comunicación científica y educación",
   },
   collaborations: {

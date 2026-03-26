@@ -2,7 +2,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
 import SectionHeader from "@/components/SectionHeader";
 import { researchTopics } from "@/data/research";
-import biodiversity from "@/assets/biodiversity.jpg";
+import biodiversity from "@/assets/_DSC4666.png";
 
 const Research = () => {
   const { t } = useLanguage();
