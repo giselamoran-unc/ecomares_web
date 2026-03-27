@@ -78,9 +78,9 @@ export const es = {
   },
   outreach: {
     title: "Contar la ciencia",
-    subtitle: "Actividades de comunicación científica y educación",
+    subtitle: "Hacemos comunicación pública de la ciencia más allá de los papers",
   },
-  collaborations: {
+    collaborations: {
     title: "Colaboraciones",
     subtitle: "Instituciones y grupos de investigación con los que colaboramos",
   },
