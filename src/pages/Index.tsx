@@ -53,6 +53,14 @@ const Index = () => {
           </div>
         </div>
       </section>
+       {/* Frase */}
+      <section className="py-20 bg-ocean-deep">
+        <div className="container mx-auto px-4 text-center">
+          <p className="font-display text-4xl md:text-5xl font-bold text-primary-foreground tracking-widest">
+            CIENCIA ES SOBERANÍA
+          </p>
+        </div>
+      </section>
     </PageLayout>
   );
 };

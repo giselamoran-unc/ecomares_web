@@ -14,7 +14,6 @@ const Navbar = () => {
     { to: "/about", label: t.nav.about },
     { to: "/team", label: t.nav.team },
     { to: "/research", label: t.nav.research },
-    { to: "/projects", label: t.nav.projects },
     { to: "/expeditions", label: t.nav.expeditions },
     { to: "/publications", label: t.nav.publications },
     { to: "/outreach", label: t.nav.outreach },

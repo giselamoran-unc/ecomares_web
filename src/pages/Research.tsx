@@ -1,6 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
-import SectionHeader from "@/components/SectionHeader";
 import { researchTopics } from "@/data/research";
 import biodiversity from "@/assets/_DSC4666.png";
 
@@ -18,11 +17,11 @@ const Research = () => {
       </section>
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {researchTopics.map((topic, i) => (
-              <div key={i} className="border-l-4 border-turquoise pl-6 py-2">
-                <h3 className="font-display text-xl font-semibold text-foreground">{topic.key}</h3>
-                <p className="text-muted-foreground mt-2 leading-relaxed">{topic.desc}</p>
+              <div key={i} className="bg-card border border-border rounded-lg p-6" style={{borderTop: "3px solid #07195e"}}>
+                <h3 className="font-display text-lg font-semibold text-foreground mb-3">{topic.key}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{topic.desc}</p>
               </div>
             ))}
           </div>
