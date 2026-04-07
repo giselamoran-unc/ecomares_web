@@ -4,7 +4,7 @@ import { researchTopics } from "@/data/research";
 import biodiversity from "@/assets/_DSC4666.png";
 
 const Research = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <PageLayout>
       <section className="relative h-[45vh] min-h-[300px] flex items-center justify-center overflow-hidden">
@@ -19,11 +19,15 @@ const Research = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {researchTopics.map((topic, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-6" style={{borderTop: "3px solid #07195e"}}>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-3">{topic.key}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{topic.desc}</p>
+              <div key={i} className="bg-card border border-border rounded-lg p-6" style={{borderTop: "3px solid #2986bd"}}>
+                <h3 className="font-display text-lg font-semibold text-foreground mb-3">
+                  {language === "en" && topic.keyEn ? topic.keyEn : topic.key}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {language === "en" && topic.descEn ? topic.descEn : topic.desc}
+                </p>
               </div>
-            ))}
+))}
           </div>
         </div>
       </section>
