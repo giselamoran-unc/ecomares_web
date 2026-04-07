@@ -1,9 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import PageLayout from "@/components/layout/PageLayout";
 import { teamMembers } from "@/data/team";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const TeamMember = () => {
   const { id } = useParams();
+  const { language } = useLanguage();
   const member = teamMembers.find((m) => m.id === id);
 
   if (!member) {
@@ -16,6 +18,10 @@ const TeamMember = () => {
       </PageLayout>
     );
   }
+
+  const bio = language === "en" && member.bioEn ? member.bioEn : member.bio;
+  const roleLabel = language === "en" && member.roleLabelEn ? member.roleLabelEn : member.roleLabel;
+  const researchLines = language === "en" && member.researchLinesEn ? member.researchLinesEn : member.researchLines;
 
   return (
     <PageLayout>
@@ -30,7 +36,7 @@ const TeamMember = () => {
               </div>
             )}
             <div>
-              <span className="text-xs uppercase tracking-wider text-turquoise font-medium">{member.roleLabel || member.role}</span>
+              <span className="text-xs uppercase tracking-wider text-turquoise font-medium">{roleLabel}</span>
               <h1 className="font-display text-3xl font-bold text-primary-foreground mt-1">{member.name}</h1>
               <p className="text-primary-foreground/70 mt-1">{member.affiliation}</p>
             </div>
@@ -42,19 +48,23 @@ const TeamMember = () => {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-6">
-              {member.bio && (
+              {bio && (
                 <div className="bg-card border border-border rounded-lg p-6">
-                  <h2 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-3">Biografía</h2>
-                  <p className="text-foreground leading-relaxed">{member.bio}</p>
+                  <h2 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-3">
+                    {language === "en" ? "Biography" : "Biografía"}
+                  </h2>
+                  <p className="text-foreground leading-relaxed text-justify">{bio}</p>
                 </div>
               )}
             </div>
             <div className="space-y-6">
-              {member.researchLines && member.researchLines.length > 0 && (
+              {researchLines && researchLines.length > 0 && (
                 <div className="bg-card border border-border rounded-lg p-6">
-                  <h2 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-3">Líneas de investigación</h2>
+                  <h2 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-3">
+                    {language === "en" ? "Research lines" : "Líneas de investigación"}
+                  </h2>
                   <div className="flex flex-wrap gap-2">
-                    {member.researchLines.map((line, i) => (
+                    {researchLines.map((line, i) => (
                       <span key={i} className="text-xs px-3 py-1 rounded-full bg-secondary text-muted-foreground border border-border">{line}</span>
                     ))}
                   </div>
@@ -62,17 +72,21 @@ const TeamMember = () => {
               )}
               {member.email && (
                 <div className="bg-card border border-border rounded-lg p-6">
-                  <h2 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-3">Contacto</h2>
+                  <h2 className="text-sm uppercase tracking-wider text-muted-foreground font-medium mb-3">
+                    {language === "en" ? "Contact" : "Contacto"}
+                  </h2>
                   <p className="text-sm text-muted-foreground">Email</p>
                   <a href={`mailto:${member.email}`} className="text-sm text-turquoise break-all">{member.email}</a>
-                  <p className="text-sm text-muted-foreground mt-3">Institución</p>
+                  <p className="text-sm text-muted-foreground mt-3">{language === "en" ? "Institution" : "Institución"}</p>
                   <p className="text-sm text-foreground">{member.affiliation}</p>
                 </div>
               )}
             </div>
           </div>
           <div className="mt-10">
-            <Link to="/team" className="text-sm text-turquoise hover:underline">← Volver al equipo</Link>
+            <Link to="/team" className="text-sm text-turquoise hover:underline">
+              {language === "en" ? "← Back to team" : "← Volver al equipo"}
+            </Link>
           </div>
         </div>
       </section>

@@ -3,23 +3,21 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
 import HeroSection from "@/components/HeroSection";
 import SectionHeader from "@/components/SectionHeader";
-import { BookOpen, Users, FlaskConical, Ship, Megaphone, GraduationCap, FolderOpen, Handshake, Mail } from "lucide-react";
-
+import { BookOpen, Users, FlaskConical, Ship, Megaphone, GraduationCap, Handshake, Mail } from "lucide-react";
 const Index = () => {
   const { t } = useLanguage();
 
-  const sections = [
-    { to: "/about", label: t.nav.about, icon: BookOpen, desc: "Misión y enfoque científico" },
-    { to: "/team", label: t.nav.team, icon: Users, desc: "Investigadores y colaboradores" },
-    { to: "/research", label: t.nav.research, icon: FlaskConical, desc: "Líneas de investigación" },
-    { to: "/projects", label: t.nav.projects, icon: FolderOpen, desc: "Proyectos en curso" },
-    { to: "/expeditions", label: t.nav.expeditions, icon: Ship, desc: "Campañas científicas" },
-    { to: "/publications", label: t.nav.publications, icon: BookOpen, desc: "Artículos científicos" },
-    { to: "/outreach", label: t.nav.outreach, icon: Megaphone, desc: "Divulgación y educación" },
-    { to: "/collaborations", label: t.nav.collaborations, icon: Handshake, desc: "Socios y redes" },
-    { to: "/opportunities", label: t.nav.opportunities, icon: GraduationCap, desc: "Becas y convocatorias" },
-    { to: "/contact", label: t.nav.contact, icon: Mail, desc: "Escribinos" },
-  ];
+ const sections = [
+  { to: "/about", label: t.nav.about, icon: BookOpen, desc: t.home.sectionDescs.about },
+  { to: "/team", label: t.nav.team, icon: Users, desc: t.home.sectionDescs.team },
+  { to: "/research", label: t.nav.research, icon: FlaskConical, desc: t.home.sectionDescs.research },
+  { to: "/expeditions", label: t.nav.expeditions, icon: Ship, desc: t.home.sectionDescs.expeditions },
+  { to: "/publications", label: t.nav.publications, icon: BookOpen, desc: t.home.sectionDescs.publications },
+  { to: "/outreach", label: t.nav.outreach, icon: Megaphone, desc: t.home.sectionDescs.outreach },
+  { to: "/collaborations", label: t.nav.collaborations, icon: Handshake, desc: t.home.sectionDescs.collaborations },
+  { to: "/opportunities", label: t.nav.opportunities, icon: GraduationCap, desc: t.home.sectionDescs.opportunities },
+  { to: "/contact", label: t.nav.contact, icon: Mail, desc: t.home.sectionDescs.contact },
+];
 
   return (
     <PageLayout>

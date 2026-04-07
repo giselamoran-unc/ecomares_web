@@ -5,7 +5,7 @@ import { teamMembers } from "@/data/team";
 import teamBg from "@/assets/estrella.jpg";
 
 const Team = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <PageLayout>
       <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
@@ -35,12 +35,14 @@ const Team = () => {
                 </div>
                 <div className="p-5">
                   <span className="text-xs uppercase tracking-wider text-turquoise font-medium">
-                    {m.roleLabel || t.team.roles[m.role as keyof typeof t.team.roles]}
+                    {(language === "en" && m.roleLabelEn) ? m.roleLabelEn : (m.roleLabel || t.team.roles[m.role as keyof typeof t.team.roles])}
                   </span>
                   <h3 className="font-display text-lg font-semibold text-foreground mt-1">{m.name}</h3>
                   <p className="text-xs text-muted-foreground/70 mt-2">{m.affiliation}</p>
-                  {m.researchLines && (
-                    <p className="text-sm text-muted-foreground mt-2">{m.researchLines.join(" · ")}</p>
+                  {((language === "en" && m.researchLinesEn) ? m.researchLinesEn : m.researchLines) && (
+                    <p className="text-sm text-muted-foreground mt-2">
+                      {((language === "en" && m.researchLinesEn) ? m.researchLinesEn : m.researchLines)!.join(" · ")}
+                    </p>
                   )}
                 </div>
               </Link>

@@ -9,7 +9,6 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import TeamMember from "./pages/TeamMember";
 import Research from "./pages/Research";
-import Projects from "./pages/Projects";
 import Expeditions from "./pages/Expeditions";
 import Publications from "./pages/Publications";
 import Outreach from "./pages/Outreach";
@@ -33,7 +32,6 @@ const App = () => (
             <Route path="/team" element={<Team />} />
             <Route path="/team/:id" element={<TeamMember />} />
             <Route path="/research" element={<Research />} />
-            <Route path="/projects" element={<Projects />} />
             <Route path="/expeditions" element={<Expeditions />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/outreach" element={<Outreach />} />
