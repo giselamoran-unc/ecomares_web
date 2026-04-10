@@ -29,6 +29,7 @@ import imgPortNota5 from "@/assets/nota5.jpg";
 import imgPortUniv from  "@/assets/universotv.png";
 import imgPortPers from "@/assets/personalidad.png";
 import imgPortKids from "@/assets/cumbrekids.png"; 
+import imgPortC from "@/assets/carbono.png";
 
 const imgs: Record<string, string> = {
   "/src/assets/conifest.jpeg": conifest,
@@ -58,6 +59,7 @@ const imgs: Record<string, string> = {
   "/src/assets/universotv.png":imgPortUniv,
   "/src/assets/personalidad.png": imgPortPers,
   "/src/assets/cumbrekids.png": imgPortKids,
+  "/src/assets/carbono.png": imgPortC,
 };
 
 const Gallery = ({ photos }: { photos: string[] }) => {

@@ -92,6 +92,7 @@ export const en = {
   outreach: {
     title: "Outreach",
     subtitle: "Science communication and education activities",
+    desc: "We communicate science beyond papers",
   },
   collaborations: {
     title: "Collaborations",

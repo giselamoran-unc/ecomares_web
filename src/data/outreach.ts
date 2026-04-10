@@ -11,16 +11,16 @@ export interface OutreachActivity {
 }
 
 export const outreachActivities: OutreachActivity[] = [
-  { 
-  title: "Ascidias: el filtro vivo del mar (Cumbre Kids)", 
-  titleEn: "Ascidians: the living filter of the sea (Cumbre Kids)",
-  year: "2026", 
-  desc: "Episodio del podcast educativo Cumbre Kids donde Carla de Aranzamendi explica a los más chicos qué son las ascidias. La nota describe cómo estos animales filtran el agua, su evolución y los descubrimientos realizados en el Cañón Submarino Mar del Plata.", 
-  descEn: "Episode of the educational podcast Cumbre Kids where Carla de Aranzamendi explains to children what ascidians are. The piece describes how these animals filter water, their evolution, and the discoveries made in the Mar del Plata Submarine Canyon.",
-  photo: "/src/assets/cumbrekids.png", // Puedes usar una foto de una ascidia si tienes una
-  type: "video", 
-  link: "https://www.youtube-nocookie.com/embed/aOGvRGK4OiM" 
-},
+    { 
+    title: "Ascidias: el filtro vivo del mar (Cumbre Kids)", 
+    titleEn: "Ascidians: the living filter of the sea (Cumbre Kids)",
+    year: "2026", 
+    desc: "Episodio del podcast educativo Cumbre Kids donde Carla de Aranzamendi explica a los más chicos qué son las ascidias. La nota describe cómo estos animales filtran el agua, su evolución y los descubrimientos realizados en el Cañón Submarino Mar del Plata.", 
+    descEn: "Episode of the educational podcast Cumbre Kids where Carla de Aranzamendi explains to children what ascidians are. The piece describes how these animals filter water, their evolution, and the discoveries made in the Mar del Plata Submarine Canyon.",
+    photo: "/src/assets/cumbrekids.png", // Puedes usar una foto de una ascidia si tienes una
+    type: "video", 
+    link: "https://www.youtube-nocookie.com/embed/aOGvRGK4OiM" 
+    },
   { 
   title: "Carla de Aranzamendi: Nominada a Personalidad Cordobesa 2025", 
   titleEn: "Carla de Aranzamendi: Nominated for Córdoba Person of the Year 2025",
@@ -83,6 +83,16 @@ export const outreachActivities: OutreachActivity[] = [
     photo: "/src/assets/universotv.png", // O la foto que prefieras para esta entrevista
     type: "video", 
     link: "https://www.youtube-nocookie.com/embed/qllZGqLC4hw" 
+  },
+  { 
+  title: "Áreas Marinas Protegidas: escudos contra el cambio climático", 
+  titleEn: "Marine Protected Areas: shields against climate change",
+  year: "2024", 
+  desc: "Nota publicada por el CADIC-CONICET donde especialistas destacan el rol de las AMPs en Argentina. El artículo subraya cómo la conservación de los ecosistemas bentónicos y los bosques de macroalgas es fundamental para la captura de carbono y la resiliencia oceánica.", 
+  descEn: "Article published by CADIC-CONICET where specialists highlight the role of MPAs in Argentina. The piece underscores how the conservation of benthic ecosystems and kelp forests is key for carbon sequestration and oceanic resilience.",
+  photo: "/src/assets/carbono.png", // Queda muy bien con una foto de buceo o del Canal Beagle
+  type: "article", 
+  link: "https://cadic.conicet.gov.ar/especialistas-del-conicet-destacan-la-importancia-de-las-areas-marinas-protegidas-amps-de-argentina-para-contribuir-a-combatir-el-cambio-climatico/" 
 },
   { 
     title: "Documental Mar del Fuego", 
