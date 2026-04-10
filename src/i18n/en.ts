@@ -102,7 +102,7 @@ export const en = {
     title: "Opportunities",
     subtitle: "Calls for students, fellows, and postdoctoral researchers",
     joinUs: "Join the team",
-    joinText: "If you are interested in doing your undergraduate thesis, PhD, or postdoctoral research in marine ecology, do not hesitate to contact us.",
+    joinText: "If you are interested in doing your undergraduate thesis, PhD, or postdoctoral research, do not hesitate to contact us.",
   },
   contact: {
     title: "Contact",
