@@ -9,10 +9,10 @@ import mica from "@/assets/Mica.jpg";
 import lule from "@/assets/lule.jpeg";
 import diego from "@/assets/diego.jpg";
 import ferrero from "@/assets/ferrero.jpg";
-import mery from "@/assets/Mery (2).jpg";
+import mery from "@/assets/mery2.jpg";
 import risso from "@/assets/risso.jpg";
 import becerra from "@/assets/becerra.jpg";
-import sol from "@/assets/sol.png";
+import sol from "@/assets/sol.jpg";
 
 export const teamPhotos: Record<string, string> = {
   "/src/assets/rs.jpg": rs,
