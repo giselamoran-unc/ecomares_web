@@ -4,7 +4,7 @@ import { Mail, MapPin, Instagram } from "lucide-react";
 import contactBg from "@/assets/estrella-roja.jpg";
 
 const Contact = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <PageLayout>
       <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
@@ -39,7 +39,9 @@ const Contact = () => {
             <div className="flex items-start gap-4">
               <Instagram className="w-6 h-6 text-turquoise mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-display text-lg font-semibold text-foreground">Redes sociales</h3>
+                <h3 className="font-display text-lg font-semibold text-foreground">
+                  {language === "en" ? "Social media" : "Redes sociales"}
+                </h3>
                 <a href="https://instagram.com/ecomares" target="_blank" rel="noopener noreferrer" className="text-muted-foreground mt-1 hover:text-turquoise transition-colors">
                   @ecomares
                 </a>

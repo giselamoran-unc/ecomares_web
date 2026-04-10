@@ -4,7 +4,7 @@ import SectionHeader from "@/components/SectionHeader";
 import { collaborators } from "@/data/collaborations";
 
 const Collaborations = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <PageLayout>
       <section className="section-ocean py-20 md:py-28">
@@ -18,8 +18,12 @@ const Collaborations = () => {
             {collaborators.map((c, i) => (
               <div key={i} className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <h3 className="font-display text-lg font-semibold text-foreground">{c.name}</h3>
-                <span className="text-xs text-turquoise uppercase tracking-wider">{c.country}</span>
-                <p className="text-sm text-muted-foreground mt-3">{c.desc}</p>
+                <span className="text-xs text-turquoise uppercase tracking-wider">
+                  {language === "en" && c.countryEn ? c.countryEn : c.country}
+                </span>
+                <p className="text-sm text-muted-foreground mt-3">
+                  {language === "en" && c.descEn ? c.descEn : c.desc}
+                </p>
               </div>
             ))}
           </div>

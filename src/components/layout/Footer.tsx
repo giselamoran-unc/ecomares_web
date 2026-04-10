@@ -2,7 +2,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo_solo.png";
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <footer className="section-ocean text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
@@ -10,8 +10,9 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <img src={logo} alt="ECOMARES" className="h-14 w-auto" />
             <div>
-              <p className="font-display text-xl font-bold tracking-wider">ECOMARES</p>
-              <p className="text-sm text-primary-foreground/60">Ecosistemas Marinos y Polares</p>
+              <p className="text-sm text-primary-foreground/60">
+                {language === "en" ? "Marine and Polar Ecosystems" : "Ecosistemas Marinos y Polares"}
+              </p>
             </div>
           </div>
           <p className="text-sm text-primary-foreground/50">

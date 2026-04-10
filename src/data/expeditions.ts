@@ -64,34 +64,14 @@ export const expeditionZones: ExpeditionZone[] = [
     name: "Ártico",
     nameEn: "Arctic",
     img: articport,
-    campaigns: [
-      {
-        title: "Expedición Ártica",
-        titleEn: "Arctic Expedition",
-        year: "2022",
-        desc: "Estudio comparativo de ecosistemas bentónicos árticos y antárticos en fiordos de Svalbard.",
-        descEn: "Comparative study of Arctic and Antarctic benthic ecosystems in Svalbard fjords.",
-        img: articport,
-        photos: [],
-      },
-    ],
+    campaigns: [],
   },
   {
     id: "beagle",
     name: "Canal Beagle",
     nameEn: "Beagle Channel",
     img: beagle1,
-    campaigns: [
-      {
-        title: "Muestreo Canal Beagle",
-        titleEn: "Beagle Channel Sampling",
-        year: "2024",
-        desc: "Campaña de muestreo estival en el Canal Beagle para el estudio de comunidades bentónicas.",
-        descEn: "Summer sampling campaign in the Beagle Channel for the study of benthic communities.",
-        img: beagle1,
-        photos: [],
-      },
-    ],
+    campaigns: [],
   },
   {
     id: "amp",

@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import SectionHeader from "@/components/SectionHeader";
 import { BookOpen, Users, FlaskConical, Ship, Megaphone, GraduationCap, Handshake, Mail } from "lucide-react";
 const Index = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
  const sections = [
   { to: "/about", label: t.nav.about, icon: BookOpen, desc: t.home.sectionDescs.about },
@@ -34,12 +34,12 @@ const Index = () => {
       {/* Section Navigation */}
       <section className="pb-20 md:pb-28">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {sections.map((s) => (
               <Link
                 key={s.to}
                 to={s.to}
-                className="group flex flex-col items-center text-center p-5 rounded-lg border border-border hover:border-ocean-mid hover:bg-ocean-foam transition-all"
+                className="group flex flex-col items-center text-center p-5 rounded-lg border border-border hover:border-ocean-mid hover:bg-ocean-foam transition-all w-36"
               >
                 <s.icon className="w-7 h-7 text-ocean-mid group-hover:text-ocean-light transition-colors mb-3" />
                 <span className="text-sm font-semibold text-foreground group-hover:text-ocean-mid transition-colors">
@@ -51,12 +51,12 @@ const Index = () => {
           </div>
         </div>
       </section>
-       {/* Frase */}
-      <section className="py-20 bg-ocean-deep">
-        <div className="container mx-auto px-4 text-center">
-          <p className="font-display text-4xl md:text-5xl font-bold text-primary-foreground tracking-widest">
-            CIENCIA ES SOBERANÍA
-          </p>
+            {/* Frase */}
+            <section className="py-20 bg-ocean-deep">
+              <div className="container mx-auto px-4 text-center">
+                <p className="font-display text-4xl md:text-5xl font-bold text-primary-foreground tracking-widest">
+                   {language === "en" ? "SCIENCE IS SOVEREIGNTY" : "CIENCIA ES SOBERANÍA"}
+                </p>
         </div>
       </section>
     </PageLayout>

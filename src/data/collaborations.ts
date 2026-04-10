@@ -1,14 +1,22 @@
 export interface Collaborator {
   name: string;
   country: string;
-  desc: string;
+  countryEn?: string;
+  desc?: string;
+  descEn?: string;
 }
 
 export const collaborators: Collaborator[] = [
-  { name: "British Antarctic Survey", country: "Reino Unido", desc: "Colaboración en estudios de ecología bentónica antártica." },
-  { name: "Alfred Wegener Institute", country: "Alemania", desc: "Investigación conjunta en ecosistemas polares y cambio climático." },
-  { name: "Universidad de Barcelona", country: "España", desc: "Estudios de biodiversidad marina y modelado ecológico." },
-  { name: "Instituto Antártico Argentino", country: "Argentina", desc: "Logística y apoyo para campañas antárticas." },
-  { name: "University Centre in Svalbard", country: "Noruega", desc: "Investigación comparativa de ecosistemas árticos y antárticos." },
-  { name: "Universidad de Magallanes", country: "Chile", desc: "Estudios de ecosistemas marinos subantárticos compartidos." },
+  { name: "BAS - British Antarctic Survey", country: "Reino Unido", countryEn: "United Kingdom" },
+  { name: "AWI - Alfred Wegener Institute", country: "Alemania", countryEn: "Germany" },
+  { name: "Universidad de Barcelona", country: "España", countryEn: "Spain" },
+  { name: "Universidad de Oviedo", country: "España", countryEn: "Spain" },
+  { name: "IAA - Instituto Antártico Argentino", country: "Argentina", countryEn: "Argentina" },
+  { name: "UNAP - Universidad de Magallanes", country: "Chile", countryEn: "Chile" },
+  { name: "Universidad de Bremen", country: "Alemania", countryEn: "Germany" },
+  { name: "Universidad de Ghent", country: "Bélgica", countryEn: "Belgium" },
+  { name: "INIDEP - Instituto Nacional de Investigación y Desarrollo Pesquero", country: "Argentina", countryEn: "Argentina" },
+  { name: "CADIC - Centro Austral de Investigaciones Científicas", country: "Argentina", countryEn: "Argentina" },
+  { name: "CENPAT - Centro Nacional Patagónico", country: "Argentina", countryEn: "Argentina" },
+  { name: "NIOZ - Royal Netherlands Institute for Sea Research", country: "Países Bajos", countryEn: "Netherlands" },
 ];
