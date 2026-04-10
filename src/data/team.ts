@@ -37,6 +37,8 @@ export const teamMembers: TeamMember[] = [
     role: "researcher",
     roleLabel: "Investigadora Adjunta",
     roleLabelEn: "Associate Researcher",
+    bio: "Mi principal interés es conocer y comprender la diversidad de invertebrados marinos, considerando la variabilidad morfológica y genética que la sustenta. Mis líneas de investigación incluyen el estudio de la ecología evolutiva y de los procesos que generan y mantienen la diversidad, la identificación de especies mediante enfoques morfológicos y moleculares, y el análisis de patrones filogeográficos y filogenéticos para comprender la historia evolutiva de distintos linajes marinos. Además, colaboro en estudios sobre los efectos del cambio climático en ecosistemas antárticos.",
+    bioEn:"My main interest is to investigate and understand the diversity of marine invertebrates, focusing on the morphological and genetic variability that underpins it. My research includes the study of evolutionary ecology and the processes that generate and sustain diversity, species identification using both morphological and molecular methods, and the analysis of phylogeographic and phylogenetic patterns to explore the evolutionary history of different marine lineages. Additionally, I collaborate on studies examining the effects of climate change on Antarctic ecosystems.",
     desc: "Investigadora Adjunta. Nacella concinna, Cambio Climático y Evolución Paralela.",
     affiliation: "IDEA (CONICET - UNC)",
     email: "dearanzcarla@gmail.com",

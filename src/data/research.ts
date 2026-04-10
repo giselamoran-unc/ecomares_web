@@ -9,6 +9,7 @@ export const researchTopics: ResearchTopic[] = [
   { key: "Estructura y dinámica de comunidades", desc: "", keyEn: "Community structure and dynamics", descEn: "" },
   { key: "Filogeografía y genética de poblaciones", desc: "", keyEn: "Phylogeography and population genetics", descEn: "" },
   { key: "Biología reproductiva", desc: "", keyEn: "Reproductive biology", descEn: "" },
+  { key: "Ecología evolutiva", desc: "", keyEn: "Evolutionary ecology", descEn: "" },
   { key: "Tramas, estructura y ecología trófica", desc: "", keyEn: "Food webs, structure and trophic ecology", descEn: "" },
   { key: "Microplásticos en la Antártida", desc: "", keyEn: "Microplastics in Antarctica", descEn: "" },
   { key: "Acidificación del océano", desc: "", keyEn: "Ocean acidification", descEn: "" },

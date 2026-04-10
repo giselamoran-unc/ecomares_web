@@ -128,6 +128,182 @@ export const publicationsByYear: PublicationYear[] = [
         journal: "Science of The Total Environment ",
         doi: "doi.org/10.1016/j.scitotenv.2024.170155",
       },
+      {
+        title: "Shallow Hard-Bottom Benthic Assemblages of South Bay (Antarctic Peninsula): An Update 40 Years Later",
+        authors: "Morales S., Cárdenas C.A., Bravo-Gómez D., Lagger C.",
+        journal: "Diversity",
+        doi: "10.3390/d16030162",
+      },
+      {
+        title: "Blue carbon storage in a sub-Antarctic marine protected area",
+        authors: "Bergagna L., Lovrich G., Riccialdelli L. et al.",
+        journal: "Scientific Reports",
+        doi: "10.1038/s41598-024-71319-0",
+      },
+    ],
+  },
+  {
+    year: 2023,
+    publications: [
+      {
+        title: "Molecular responses of calcifying and non-calcifying Antarctic benthic species to Ocean Acidification",
+        authors: "Servetto N., Ruiz M.B., Martínez M., Harms L., de Aranzamendi C., Alurralde G., Giménez D., Abele D., Held C., Sahade R.",
+        journal: "Science of the Total Environment",
+        doi: "10.1016/j.scitotenv.2023.166577",
+      },
+      {
+        title: "A long and winding but exciting road: Biodiversity, phylogenetic, and biogeographic relationships of ascidians in the Southwest Atlantic",
+        authors: "de Aranzamendi M.C.",
+        journal: "Developmental Dynamics",
+        doi: "10.1002/dvg.23551",
+      },
+      {
+        title: "The role of drilling predation in isolated, nutrient-poor ecosystems: first insights from Rapa Nui, Polynesia",
+        authors: "Martinelli J.C., Gordillo S., de Aranzamendi M.C., Rivadeneira M.M.",
+        journal: "Palaios",
+        doi: "10.2110/palo.2022.044",
+      },
+      {
+        title: "Genetic footprints of Quaternary glacial cycles over the patterns of population diversity and structure in three Nacella species across the Magellan province",
+        authors: "González-Wevar C.A., de Aranzamendi M.C., Segovia N.I., Rosenfeld S., Maturana C.S., Molina C.R. et al.",
+        journal: "Frontiers in Marine Science",
+        doi: "10.3389/fmars.2023.1154755",
+      },
+      {
+        title: "Multi-omics for studying and understanding polar life",
+        authors: "Clark M.S., Hoffman J.I., Peck L.S., Bargelloni L., Gande D., Havermans C. et al.",
+        journal: "Nature Communications",
+        doi: "10.1038/s41467-023-43209-y",
+      },
+    ],
+  },
+  {
+    year: 2022,
+    publications: [
+      {
+        title: "Identifying environmental drivers of shell shape and size variation in a widely distributed marine bivalve along the Atlantic Patagonian coast",
+        authors: "Morán G.A., Martínez J.J., Reyna P.B., Martín J., Malits A., Gordillo S.",
+        journal: "Zoologischer Anzeiger",
+        doi: "10.1016/j.jcz.2022.05.003",
+      },
+      {
+        title: "Molecular responses of a key Antarctic species to sedimentation due to rapid climate change",
+        authors: "Ruiz M.B., Servetto N., Alurralde G., Abele D., Harms L., Sahade R., Held C.",
+        journal: "Marine Environmental Research",
+        doi: "10.1016/j.marenvres.2022.105720",
+      },
+      {
+        title: "Parallel shape divergence between ecotypes of the limpet Nacella concinna along the Antarctic Peninsula: a new model species for parallel evolution?",
+        authors: "de Aranzamendi M.C., Martínez J.J., Held C., Sahade R.",
+        journal: "Zoology",
+        doi: "10.1016/j.zool.2021.125983",
+      },
+      {
+        title: "Abyssal ascidians (Chordata, Tunicata) from the Weddell Sea, Antarctica, including a new Styela species and stomach content identifications",
+        authors: "Maggioni T., Rimondino C., Taverna A., Reyna P., Lagger C., Alurralde G., Calcagno E., Tatián M.",
+        journal: "Zootaxa",
+        doi: "10.11646/zootaxa.5093.3.2",
+      },
+      {
+        title: "Octopuses and drilling snails as the main suspects of predation traces on shelled molluscs in West Antarctica",
+        authors: "Gordillo S., Morán G.A., Malvé M.E.",
+        journal: "Polar Biology",
+        doi: "10.1007/s00300-021-02979-5",
+      },
+    ],
+  },
+  {
+    year: 2021,
+    publications: [
+      {
+        title: "Tidewater glacier retreat in Antarctica: The table is set for fast-growing opportunistic species, is it?",
+        authors: "Lagger C., Neder C., Merlo P., Servetto N., Jerosch K., Sahade R.",
+        journal: "Estuarine, Coastal and Shelf Science",
+        doi: "10.1016/j.ecss.2021.107447",
+      },
+      {
+        title: "Molecular mechanisms underlying responses of the Antarctic coral Malacobelemnon daytoni to ocean acidification",
+        authors: "Servetto N., de Aranzamendi C., Bettencourt R., Held C., Abele D., Movilla J., González G., Bustos D., Sahade R.",
+        journal: "Marine Environmental Research",
+        doi: "10.1016/j.marenvres.2021.105430",
+      },
+      {
+        title: "Ocean acidification effects on the stress response in a calcifying Antarctic coastal organism: The case of Nacella concinna ecotypes",
+        authors: "de Aranzamendi M.C., Servetto N., Movilla J., Bettencourt R., Sahade R.",
+        journal: "Marine Pollution Bulletin",
+        doi: "10.1016/j.marpolbul.2021.112218",
+      },
+      {
+        title: "Morphology, genetics, and historical records support the synonymy of two ascidian species and suggest their spread throughout areas of the Southern Hemisphere",
+        authors: "Taverna A., de Aranzamendi M.C., Maggioni T., Alurralde G., Turon X., Tatián M.",
+        journal: "Invertebrate Systematics",
+        doi: "10.1071/IS20060",
+      },
+      {
+        title: "A new record of Ascidiella scabra (Müller, 1776) (Ascidiacea, Phlebobranchia) in the southwestern Atlantic",
+        authors: "Giménez D.R., Taverna A., Meloni M., Correa N., Sylvester F., Tatián M.",
+        journal: "Check List",
+        doi: "10.15560/17.3.723",
+      },
+      {
+        title: "Ocean warming and freshening effects on lipid metabolism in coastal Antarctic phytoplankton assemblages dominated by sub-Antarctic species",
+        authors: "Antacli J.C., Hernando M.P., De Troch M., Malanga G., Mendiolar M., Hernández D.R., Varela D.E., Antoni J., Sahade R.J., Schloss I.R.",
+        journal: "Science of the Total Environment",
+        doi: "10.1016/j.scitotenv.2021.147879",
+      },
+      {
+        title: "Rocky reef biodiversity survey: Punta Pardelas, Argentina",
+        authors: "Bravo G., Livore J.P., Battini N., Gastaldi M., Lauretta D., Brogger M., Raffo M.P., Lagger C., Bigatti G.",
+        journal: "Biodiversity Data Journal",
+        doi: "10.3897/BDJ.9.e69413",
+      },
+      {
+        title: "Antarctic ascidians under increasing sedimentation: Physiological thresholds and ecosystem hysteresis",
+        authors: "Torre L., Alurralde G., Lagger C., Abele D., Schloss I.R., Sahade R.",
+        journal: "Marine Environmental Research",
+        doi: "10.1016/j.marenvres.2021.105284",
+      },
+      {
+        title: "Late Holocene Ameghinomya antiqua shells from the Beagle Channel: A multi-proxy approach to palaeoenvironmental and palaeoclimatic reconstruction",
+        authors: "Morán G.A., Bayer S., Beierlein L., Martinez J.J., Benitez-Vieyra S., Mackensen A. et al.",
+        journal: "Palaeogeography, Palaeoclimatology, Palaeoecology",
+        doi: "10.1016/j.palaeo.2021.110574",
+      },
+    ],
+  },
+  {
+    year: 2020,
+    publications: [
+      {
+        title: "Hidden diversity in Antarctica: Molecular and morphological evidence of two different species within one of the most conspicuous ascidian species",
+        authors: "Ruiz M., Taverna A., Servetto N., Sahade R., Held C.",
+        journal: "Ecology and Evolution",
+        doi: "10.1002/ece3.6504",
+      },
+      {
+        title: "Shorter but thicker: analysis of internal growth bands in shells of intertidal vs. subtidal Antarctic limpets, Nacella concinna, reflects their environmental adaptation",
+        authors: "Lomovasky B.J., de Aranzamendi M.C., Abele D.",
+        journal: "Polar Biology",
+        doi: "10.1007/s00300-019-02615-z",
+      },
+      {
+        title: "Spatial patterns of continental shelf faunal community structure along the Western Antarctic Peninsula",
+        authors: "Friedlander A.M., Goodell W., Salinas-de-León P., Ballesteros E., Berkenpas E., Capurro A.P., Cárdenas C.A., Hüne M., Lagger C. et al.",
+        journal: "PLoS ONE",
+        doi: "10.1371/journal.pone.0239895",
+      },
+      {
+        title: "Late Quaternary climatic variability in northern Patagonia, Argentina, based on δ18O of modern and fossil shells of Amiantis purpurata",
+        authors: "Bayer S., Beierlein L., Morán G.A., Doldán M.S., Morsan E.M., Brey T. et al.",
+        journal: "Palaeogeography, Palaeoclimatology, Palaeoecology",
+        doi: "10.1016/j.palaeo.2020.110012",
+      },
+      {
+        title: "Naticid drilling predation from tidal flats in northern Patagonia, SW Atlantic",
+        authors: "Gordillo S., Malvé M.E., Morán G.A., Boretto G.M.",
+        journal: "Journal of the Marine Biological Association of the United Kingdom",
+        doi: "10.1017/S0025315420000752",
+      },
     ],
   },
 ];
