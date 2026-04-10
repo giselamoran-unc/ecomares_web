@@ -72,7 +72,7 @@ export const teamMembers: TeamMember[] = [
     email: "biol.nataliaservetto@gmail.com",
     researchLines: ["Acidificación", "Antártida", "Química de carbonatos"],
     researchLinesEn:["Acidification", "Antarctica", "Marine carbonate chemistry"],
-    photo: "/src/assets/naty.jpg",
+    photo: "/src/assets/naty2.jpeg",
   },
   {
     id: "juli-antacli",
