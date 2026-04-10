@@ -234,6 +234,6 @@ export const teamMembers: TeamMember[] = [
     email: "solmorales.713@gmail.com ",
     researchLines: ["Microplásticos", "Antártida", "Contaminación", "Zooplancton"],
     researchLinesEn:["Microplastics", "Antarctica", "Pollution", "Zooplankton"],
-    photo: "/src/assets/sol.png",
+    photo: "/src/assets/sol2.png",
   },
 ];
