@@ -12,8 +12,8 @@ const HeroSection = () => {
       <div className="hero-overlay absolute inset-0" />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-up">
         <div className="flex items-center justify-center gap-2 mb-6">
-  <img src={logoIsotipo} alt="ECOMARES" className="h-56 md:h-72 w-auto" style={{filter: "drop-shadow(0 0 15px rgba(255,255,255,0.3)) drop-shadow(0 0 30px rgba(255,255,255,0.2))"}} />
-  <img src={logoTexto} alt="Ecosistemas Marinos y Polares" className="h-56 md:h-72 w-auto" style={{filter: "drop-shadow(0 0 2px rgba(255,255,255,0.7)) drop-shadow(0 0 35px rgba(255,255,255,1)) drop-shadow(0 0 45px rgba(255,255,255,0.9))"}} />
+  <img src={logoIsotipo} alt="ECOMARES" className="h-40 md:h-72 w-auto" style={{filter: "drop-shadow(0 0 15px rgba(255,255,255,0.3)) drop-shadow(0 0 30px rgba(255,255,255,0.2))"}} />
+  <img src={logoTexto} alt="Ecosistemas Marinos y Polares" className="h-40 md:h-72 w-auto" style={{filter: "drop-shadow(0 0 2px rgba(255,255,255,0.7)) drop-shadow(0 0 35px rgba(255,255,255,1)) drop-shadow(0 0 45px rgba(255,255,255,0.9))"}} />
 </div>
         <Link
           to="/about"
