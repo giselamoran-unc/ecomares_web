@@ -3,6 +3,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import PageLayout from "@/components/layout/PageLayout";
 import { teamMembers } from "@/data/team";
 import teamBg from "@/assets/estrella.jpg";
+import { teamPhotos } from "@/data/teamPhotos";
 
 const Team = () => {
   const { t, language } = useLanguage();
@@ -28,7 +29,7 @@ const Team = () => {
               >
                 <div className="aspect-square bg-secondary flex items-center justify-center">
                   {m.photo ? (
-                    <img src={m.photo} alt={m.name} className="w-full h-full object-cover" />
+                    <img src={teamPhotos[m.photo] || m.photo} alt={m.name} className="w-full h-full object-cover" />
                   ) : (
                     <span className="text-5xl font-display font-bold text-muted-foreground/30">{m.name.charAt(0)}</span>
                   )}

@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import PageLayout from "@/components/layout/PageLayout";
 import { teamMembers } from "@/data/team";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { teamPhotos } from "@/data/teamPhotos";
 
 const TeamMember = () => {
   const { id } = useParams();
@@ -29,7 +30,7 @@ const TeamMember = () => {
         <div className="container mx-auto px-4 pt-8 max-w-3xl">
           <div className="flex gap-6 items-start">
             {member.photo ? (
-              <img src={member.photo} alt={member.name} className="w-44 h-44 rounded-full object-cover flex-shrink-0" />
+              <img src={teamPhotos[member.photo] || member.photo} alt={member.name} className="w-44 h-44 rounded-full object-cover flex-shrink-0" />
             ) : (
               <div className="w-44 h-44 rounded-full bg-turquoise/20 flex items-center justify-center flex-shrink-0">
                 <span className="text-6xl font-display font-bold text-turquoise">{member.name.charAt(0)}</span>
