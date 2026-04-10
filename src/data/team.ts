@@ -70,7 +70,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Mi trabajo se centra en el estudio del impacto de distintos estresores sobre el bentos antártico. En particular, investigó cómo el retroceso de los glaciares, la sedimentación derivada del deshielo y la acidificación de los océanos pueden afectar la composición, estructura y distribución de las comunidades bentónicas en Caleta Potter (Antártida). Específicamente realizó experimentos de laboratorio que simulan escenarios futuros de cambio climático, con el objetivo de evaluar la tolerancia de las especies bentónicas ante variaciones de pH, salinidad y aporte de sedimentos",
     bioEn: "My research focuses on the study of the impact of multiple environmental stressors on Antarctic benthic ecosystems. In particular, it examines how glacier retreat, meltwater-driven sedimentation, ocean acidification, and temperature changes may influence the composition, structure, and spatial distribution of benthic communities in Potter Cove (Antarctica). Specifically, I conduct laboratory experiments that simulate future climate change scenarios in order to assess the tolerance of benthic species to variations in pH, salinity, temperature, and sediment input.",
     email: "biol.nataliaservetto@gmail.com",
-    researchLines: ["Acidificación", "Antártida", "Química de carbonatos"],
+    researchLines: ["Estresores múltiples", "Antártida", "Química de carbonatos", "Transcriptómica"],
     researchLinesEn:["Acidification", "Antarctica", "Marine carbonate chemistry"],
     photo: "/src/assets/naty2.jpeg",
   },
