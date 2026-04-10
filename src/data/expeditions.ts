@@ -1,6 +1,6 @@
 import antartidaport from "@/assets/antartidaport.jpg";
 import articport from "@/assets/articport.jpg";
-import beagle1 from "@/assets/Beagle_1.jpg";
+import beagle1 from "@/assets/beagle_1.jpg";
 import bb1 from "@/assets/BB1.jpg";
 import marargentino from "@/assets/marargentino.png";
 import ant26port from "@/assets/Ant26port.jpeg";
