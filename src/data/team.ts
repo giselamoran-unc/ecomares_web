@@ -146,7 +146,7 @@ export const teamMembers: TeamMember[] = [
     email: "lule.bergagna@hotmail.com",
     researchLines: ["Ciclo de carbono", "Sedimentos", "Acidificación oceánica"],
     researchLinesEn:["Carbon cycle", "Sediment", "Ocean acidification"],
-    photo: "/src/assets/lule.jpeg",
+    photo: "/src/assets/lule.jpg",
     researchGate: "https://www.researchgate.net/profile/Lucia-Bergagna?ev=hdr_xprf"
   },
   {
