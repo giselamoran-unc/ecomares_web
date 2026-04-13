@@ -42,8 +42,8 @@ const Contact = () => {
                 <h3 className="font-display text-lg font-semibold text-foreground">
                   {language === "en" ? "Social media" : "Redes sociales"}
                 </h3>
-                <a href="https://instagram.com/ecomares" target="_blank" rel="noopener noreferrer" className="text-muted-foreground mt-1 hover:text-turquoise transition-colors">
-                  @ecomares
+                <a href="https://instagram.com/ecomares.ar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground mt-1 hover:text-turquoise transition-colors">
+                  @ecomares.ar
                 </a>
               </div>
             </div>

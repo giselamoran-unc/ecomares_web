@@ -11,7 +11,7 @@ import diego from "@/assets/diego.jpg";
 import ferrero from "@/assets/ferrero.jpg";
 import mery from "@/assets/mery2.jpg";
 import risso from "@/assets/risso.jpg";
-import becerra from "@/assets/becerra.jpg";
+import becerra from "@/assets/becerra.jpeg";
 import sol from "@/assets/sol-new.png";
 
 export const teamPhotos: Record<string, string> = {
@@ -28,6 +28,6 @@ export const teamPhotos: Record<string, string> = {
   "/src/assets/ferrero.jpg": ferrero,
   "/src/assets/Mery (2).jpg": mery,
   "/src/assets/risso.jpg": risso,
-  "/src/assets/becerra.jpg": becerra,
+  "/src/assets/becerra.jpeg": becerra,
   "/src/assets/sol-new.png": sol,
 };
