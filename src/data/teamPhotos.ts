@@ -6,7 +6,7 @@ import juli from "@/assets/juli.jpg";
 import cristian from "@/assets/Cristian.jpg";
 import gi from "@/assets/gi.jpg";
 import mica from "@/assets/Mica.jpg";
-import lule from "@/assets/lule.jpeg";
+import lule from "@/assets/lule.png";
 import diego from "@/assets/diego.jpg";
 import ferrero from "@/assets/ferrero.jpg";
 import mery from "@/assets/mery2.jpg";
@@ -23,7 +23,7 @@ export const teamPhotos: Record<string, string> = {
   "/src/assets/Cristian.jpg": cristian,
   "/src/assets/gi.jpg": gi,
   "/src/assets/Mica.jpg": mica,
-  "/src/assets/lule.jpeg": lule,
+  "/src/assets/lule.png": lule,
   "/src/assets/diego.jpg": diego,
   "/src/assets/ferrero.jpg": ferrero,
   "/src/assets/Mery (2).jpg": mery,
