@@ -101,7 +101,7 @@ export const es = {
     title: "Oportunidades",
     subtitle: "Convocatorias para estudiantes, becarios y postdoctorados",
     joinUs: "Sumate al equipo",
-    joinText: "Si estás interesado en realizar tu tesis de grado, doctorado o postdoctorado en ecología marina, no dudes en contactarnos.",
+    joinText: "Si estás interesado en realizar tu tesis de grado, doctorado o postdoctorado en ECOMARES, no dudes en contactarnos.",
   },
   contact: {
     title: "Contacto",

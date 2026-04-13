@@ -220,7 +220,7 @@ export const teamMembers: TeamMember[] = [
     email: "sofiabecerra296@gmail.com",
     researchLines: ["Ecosistemas bentonicos polares", "Océano Ártico ", "Antártida"],
     researchLinesEn:["Polar benthic ecosystems", "Arctic Ocean", "Antarctica"],
-    photo: "/src/assets/becerra.jpg",
+    photo: "/src/assets/becerra.jpeg",
   },
   {
     id: "sol-morales",
