@@ -5,25 +5,32 @@ import { expeditionZones, Campaign } from "@/data/expeditions";
 import portada from "@/assets/beagleport.png";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-const Gallery = ({ photos, onClose }: { photos: string[]; onClose: () => void }) => {
+const Gallery = ({ photos, video, onClose }: { photos: string[]; video?: string[]; onClose: () => void }) => {
+  const allMedia = [...(video || []), ...(photos || [])];
   const [current, setCurrent] = useState(0);
+  const isVideo = (src: string) => src.endsWith(".mp4") || src.endsWith(".webm");
+
   return (
     <div className="fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center p-4" onClick={onClose}>
       <button onClick={onClose} className="absolute top-4 right-4 text-white hover:text-gray-300">
         <X size={32} />
       </button>
       <div className="relative w-full max-w-4xl" onClick={e => e.stopPropagation()}>
-        <img src={photos[current]} alt="" className="w-full max-h-[70vh] object-contain rounded" />
-        {photos.length > 1 && (
+        {isVideo(allMedia[current]) ? (
+          <video src={allMedia[current]} controls className="w-full max-h-[70vh] rounded" />
+        ) : (
+          <img src={allMedia[current]} alt="" className="w-full max-h-[70vh] object-contain rounded" />
+        )}
+        {allMedia.length > 1 && (
           <>
             <button
-              onClick={() => setCurrent((current - 1 + photos.length) % photos.length)}
+              onClick={() => setCurrent((current - 1 + allMedia.length) % allMedia.length)}
               className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/80"
             >
               <ChevronLeft size={24} />
             </button>
             <button
-              onClick={() => setCurrent((current + 1) % photos.length)}
+              onClick={() => setCurrent((current + 1) % allMedia.length)}
               className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/80"
             >
               <ChevronRight size={24} />
@@ -31,17 +38,27 @@ const Gallery = ({ photos, onClose }: { photos: string[]; onClose: () => void })
           </>
         )}
         <div className="flex gap-2 mt-3 overflow-x-auto pb-2 justify-center">
-          {photos.map((p, i) => (
-            <img
-              key={i}
-              src={p}
-              alt=""
-              onClick={() => setCurrent(i)}
-              className={`h-16 w-24 object-cover rounded cursor-pointer flex-shrink-0 ${current === i ? "ring-2 ring-turquoise" : "opacity-50 hover:opacity-100"}`}
-            />
+          {allMedia.map((p, i) => (
+            isVideo(p) ? (
+              <div
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`h-16 w-24 rounded cursor-pointer flex-shrink-0 bg-black flex items-center justify-center ${current === i ? "ring-2 ring-turquoise" : "opacity-50 hover:opacity-100"}`}
+              >
+                <span className="text-white text-xs">▶ video</span>
+              </div>
+            ) : (
+              <img
+                key={i}
+                src={p}
+                alt=""
+                onClick={() => setCurrent(i)}
+                className={`h-16 w-24 object-cover rounded cursor-pointer flex-shrink-0 ${current === i ? "ring-2 ring-turquoise" : "opacity-50 hover:opacity-100"}`}
+              />
+            )
           ))}
         </div>
-        <p className="text-white text-xs text-center mt-2">{current + 1} / {photos.length}</p>
+        <p className="text-white text-xs text-center mt-2">{current + 1} / {allMedia.length}</p>
       </div>
     </div>
   );
@@ -50,7 +67,7 @@ const Gallery = ({ photos, onClose }: { photos: string[]; onClose: () => void })
 const Expeditions = () => {
   const { t, language } = useLanguage();
   const [activeZone, setActiveZone] = useState(expeditionZones[0]);
-  const [gallery, setGallery] = useState<string[] | null>(null);
+  const [gallery, setGallery] = useState<{ photos: string[]; video?: string[] } | null>(null);
 
   return (
     <PageLayout>
@@ -103,8 +120,8 @@ const Expeditions = () => {
               {activeZone.campaigns.map((camp, i) => (
                 <div
                   key={i}
-                  onClick={() => camp.photos && camp.photos.length > 0 && setGallery(camp.photos)}
-                  className={`bg-card border border-border rounded-lg overflow-hidden ${camp.photos && camp.photos.length > 0 ? "cursor-pointer hover:shadow-lg transition-shadow" : ""}`}
+                  onClick={() => (camp.photos?.length || camp.video?.length) && setGallery({ photos: camp.photos || [], video: camp.video })}
+                  className={`bg-card border border-border rounded-lg overflow-hidden ${(camp.photos?.length || camp.video?.length) ? "cursor-pointer hover:shadow-lg transition-shadow" : ""}`}
                 >
                   <div className="h-48 bg-secondary flex items-center justify-center overflow-hidden relative group">
                     {camp.img ? (
@@ -136,7 +153,7 @@ const Expeditions = () => {
         </div>
       </section>
 
-      {gallery && <Gallery photos={gallery} onClose={() => setGallery(null)} />}
+      {gallery && <Gallery photos={gallery.photos} video={gallery.video} onClose={() => setGallery(null)} />}
     </PageLayout>
   );
 };

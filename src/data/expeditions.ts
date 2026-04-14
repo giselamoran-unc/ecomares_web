@@ -40,6 +40,9 @@ import Beagle23_7 from "/src/assets/Beagle23 (7).jpg";
 import Beagle23_8 from "/src/assets/Beagle23 (8).jpg";
 import Beagle23_9 from "/src/assets/Beagle23 (9).jpg";
 import Beagle23_10 from "/src/assets/Beagle23 (10).jpg";
+import Beagle24_1 from "/src/assets/Beagle24_1.jpg";
+import Beagle24_2 from "/src/assets/Beagle24_2.jpg";
+import Core_baja from "/src/assets/core_bajando.mp4";
 
 export interface Campaign {
   title: string;
@@ -49,6 +52,7 @@ export interface Campaign {
   descEn?: string;
   img: string;
   photos?: string[];
+  video?:string[];
 }
 
 export interface ExpeditionZone {
@@ -108,6 +112,16 @@ export const expeditionZones: ExpeditionZone[] = [
         descEn: "Sampling campaign of images/videos aboard the Scientific Research Vessel Shenu (CADIC) using the ROV at 7 sites within the channel, and collection of specimens for carbon analysis. Identification and processing (species-specific measurements, wet weight, displaced volume, organic and inorganic matter) of specimens of different sizes from ROV images. Participants: Martín Castro, Gustavo Lovrich, Lucía Bergagna, Juan Miller, Julieta Kaminsky, María Bagur, Ricardo Sahade, Sofía Risso.",
         img: Beagle23_port,
         photos: [Beagle23_10, Beagle23_2, Beagle23_3, Beagle23_4, Beagle23_5, Beagle23_5, Beagle23_6, Beagle23_7, Beagle23_8, Beagle23_9],
+      },
+      {
+        title: "Muestreo Canal Beagle Febrero y Octubre 2024",
+        titleEn: "Beagle Channel Sampling 2024 October and February",
+        year: "2024",
+        desc: "Participación en las salidas mensuales ROMA a bordo del Shenu para colectar muestras de sedimentos en diferentes puntos a lo largo del canal para determinación de ácidos grasos y contenido de carbono, utilizando un corer de gravedad. Procesamiento de individuos para carbono. Integrantes: Lucía Bergagna, Sofia Risso.\n\n08/2024: Campaña de muestreo de imágenes/videos a bordo del Shenu (CADIC) utilizando el ROV en 10 sitios dentro del canal y colecta de ejemplares para análisis de carbono. Integrantes: Ricardo Sahade, María Bagur, Martín Castro, Juan Miller, Julieta Kaminsky, Gustavo Lovrich, Mariano Rodriguez",
+        descEn: "Participation in monthly ROMA outings aboard the Shenu to collect sediment samples at different points along the channel for fatty acid and carbon content analysis using a gravity corer. Specimen processing for carbon analysis. Members: Lucía Bergagna, Sofia Risso.\n\n08/2024: Image/video sampling campaign aboard the Shenu (CADIC) using the ROV at 10 sites within the channel and specimen collection for carbon analysis. Members: Ricardo Sahade, María Bagur, Martín Castro, Juan Miller, Julieta Kaminsky, Gustavo Lovrich, Mariano Rodriguez.",
+        img: Beagle24_1,
+        photos: [Beagle24_2],
+        video: [Core_baja],
       },
     ],
   },
